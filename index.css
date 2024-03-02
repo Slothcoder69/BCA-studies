@@ -1,61 +1,105 @@
-#header{
+#header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 20px 80px;
     background-color: #e3e6f3;
-    box-shadow: 0 5px 15px rgb(0,0,0,0.06);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     z-index: 999;
     position: sticky;
     top: 0;
     left: 0;
-
 }
-#navbar{
+
+#navbar {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0; 
+    padding: 0;
 }
-#navbar.active{
+
+#navbar.active {
     right: 0px;
 }
-#navbar li{
+
+#navbar li {
     list-style: none;
     padding: 0 20px;
     position: relative;
 }
 
-#navbar li a{
+#navbar li a {
     text-decoration: none;
     font-size: 16px;
     font-weight: 600;
     color: #1a1a1a;
     transition: 0.3s ease;
 }
-#navbar li a:hover{
-color: #088178;
+
+#navbar li a:hover {
+    color: #088178;
 }
-#subjects{
-    border: 1 px solid rgba(2, 42, 47, 0.841);
+
+.mobile {
+    display: none;
 }
-#subjects ul{
+
+.bar {
+    display: none;
+}
+
+#subjects {
+    border: 1px solid transparent;
+}
+
+#subjects ul {
     justify-content: space-between;
-    display: inline-flex;
+    display: flex; 
 }
-#subjects ul li{
+
+#subjects ul li {
     list-style: none;
     padding: 25px;
     width: 100px;
     height: auto;
 }
-#subjects ul li button{
+
+#subjects ul li button {
     width: 100px;
     height: 100px;
     color: rgba(250, 217, 4, 0.755);
     background-color: red;
 }
-#subjects ul li button:hover{
+
+#subjects ul li button:hover {
     cursor: pointer;
     background-color: blue;
-    transition: 0.5ease;
+    transition: 0.5s ease; /* Correct the transition property */
+}
+
+@media (max-width: 799px) {
+    #navbar {
+        display: none;
+    }
+
+    .bar {
+        display: flex;
+        align-items: baseline;
+        cursor: pointer;
+    }
+
+    #subjects ul {
+        flex-direction: column; 
+    }
+    #subjects ul li {
+        width: 100%; 
+        padding: 10px; 
+    }
+
+    #subjects ul li button {
+        width: 100%;
+        height: 80px;
+        margin-bottom: 10px; 
+    }
 }
