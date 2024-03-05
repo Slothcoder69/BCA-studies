@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Architecutre internal 1</title>
+    <style>
+        body {
+        font-family: 'Arial', sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        color: #333;
+        background-color: #f4f4f4;
+    }
+    .cent{
+        font-family: 900;
+        color: red;
+        font-size: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+    
+    p li{
+        list-style: none;
+    }
+    .question{
+        font-style: oblique;
+        font-weight: 900;
+    }
+    .answer span{
+        color: lightblue;
+        list-style: none;
+    }
+     h3{
+        color: red;
+    }
+    li span{
+        color: blue;
+        list-style: none;
+        
+    }
+    .red{
+        color: red;
+    }
+    .no{
+        font-size: 16px;
+        font-weight: 900;
+        color: firebrick;
+    }
+    ol{
+        margin: 0%;
+        padding-left: 10px;
+    }
+     </style>
+</head>
+<body>
+    <div class="cent"><h1>SAQ</h1></div>
+    <p class="question">1. Describe the OSI model and mention its types of layers?
+        <p class="answer">
+            In the OSI reference model, the communications between a computing system are split into seven different abstraction layers:
+            <li>Physical</li>
+            <li>Data Link</li>
+            <li>Network</li>
+            <li>Transport</li>
+            <li>Session</li>
+            <li>Presentation</li>
+            <li>Application</li>
+        </p>
+    </p>
+    <hr>
+    <p class="question">2. Define Multiplexing and Demultiplexing?
+        <p class="answer">
+            <span class="red">Ans.</span>
+            <li><span>Multiplexing:</span>Multiplexing is the process of combining multiple data streams into a single transmission channel.</li>
+            <li>Multiplexing is known as muxing</li>
+            <li><span>Demultiplexing:</span>
+                Demultiplexing is the process of separating a single transmission channel into multiple data streams at the receiving end.</li>
+                <li>Denultiplexing is also known as demuxing</li>
+        </p>
+    </p>
+    <hr>
+    <p class="question">3. Describe the TCP/IP model and mention its types of layers?
+        <p class="answer">The TCP/IP model is also known as the TCP/IP stack. It describes how to construct communication lines for applications and how to divide a message into packets before sending it.</p>
+        The TCP/IP model is a four-layer model that breaks down network communication into four categories. <br>
+        The four layers are: 
+        <li>Application Layer</li>
+        <li>Transport Layer</li>
+        <li>Network Layer</li>
+        <li>Link layer</li>
+    </p>
+    <hr>
+    <div class="cent"><h1>LAQ</h1></div>
+    <p class="question">1.Explain about OSL layers in detail?
+        <p class="answer">Ans. The Open Systems Interconnection (OSI) model describes seven layers that computer systems use to communicate over a network. <br> It was the first standard model for network communications, adopted by all major computer and telecommunication companies in the early 1980s. </p>
+        <li><span>Physical Layer: </span>The physical layer is responsible for the physical cable or wireless connection between network nodes.</li>
+        <li>The physical layer handles the transmission of raw bits over a communication link </li>
+        <li><span>Data Link Layer</span>The data link layer then collects a stream of bits into a larger aggregate called frame. The frames are delieverd to the host</li>
+        <li><span>Network Layer:</span>Receives frames from the data link layer and delivers them to their destination</li>
+        <li><span>Transport layer:</span>Then transport layer implements process to process channel. Here the unit of data exchange is called a message rather than a pakcet or a frame</li>
+        <li><span>Session Layer:</span>The session layer creates communication channels, called sessions, between devices.</li>
+        <li>Opens and closes communication between two devices, and controls conversations between different computers</li>
+        <li><span>Presentation Layer</span>It defines how two devices should encode, encrypt, and compress data so it is received correctly on the other end.</li>
+        <li>Translates application data into a network format and prepares data for the application layer</li>
+        <li><span>Application layer:</span>Application layer protocol includes things like protocol (HTTP), which is the basis of the World Wide Web</li>
+        <li>Establishes communication between the application and the end user</li>
+    </p>
+    <hr>
+    <p class="question">2. Explain about CRC technique with an example?
+        <p class="answer">CRC stands for Cyclic Redundancy Check. <br>
+            It is based on binary divison, a sequence of redundant bits, called cyclic redundancy check bits. <br>Cyclic codes are used for error detection by link layer protocols where the data transport unit is called a frame.
+            <ol>Steps to perform crc divison are
+                <li>Find the length of divisor 'L'</li>
+                <li>Appeal 'L-1' bits to the orignal message</li>
+                <li>Perform binary divison operation</li>
+                <li>Reaminder of division = CRC number</li>
+            </ol>
+            
+        </p>
+    </p>
+    <hr>
+    <p class="question">3. Explain about Ethernet and multiple access networks(IEEE 802.3).
+        <p class="answer">Ans. Ethernet is a method of packet-based communication in a local area network (LAN).
+         <li>It's also known as LAN technology because it uses LAN cables</li>
+         <li> Ethernet is a cabled data network technology that connects hardware and software</li>
+         IEEE 802.3 is a collection of standards and protocols defined by the Institute of Electrical and Electronics Engineers (IEEE).
+         <li>IEEE 802.3 is a working group that defines the physical layer and data link layer's media access control (MAC) of wired Ethernet</li>
+        </p>
+    </p><hr>
+    <p class="question">4.Explain about CSMA/CD algorithm?
+        <p class="answer">
+            <li>The transmitting station determines wethere the channel is busy or idle with a frame is ready </li>
+            <li>If the channel is occupied, the station waits till it is free.</li>
+            <li>The station begins transmitting and continuously scans the channel for collisions if the channel is empty</li>
+            <li>The station begins the collision resolution mechanism
+                when a collision is detected.
+            </li>
+            <li>After finishing frame transmission, the stations reset the retransmission counters.</li>
+        </p>
+    </p><hr>
+    <p class="question">
+        <p class="answer"></p>
+    </p>
+ <div class="cent">Extra questions</div>
+ <p class="question">What is CSMA/cd?
+    <p class="answer">Carrier sense multiple access with collision detection (CSMA/CD) is a medium access control (MAC) protocol that specifies how network devices should react when two devices try to use the same data channel at the same time</p> </p>
+</body>
+</html>
