@@ -2,54 +2,57 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bike Website</title>
-
+    <title>Bike Repair Shop</title>
     <link rel="stylesheet" href="bike.css">
 </head>
 <body>
-
-        <section id="header">
-            <img src="done.jpeg" alt="" >
-            <div class="navbar">
-                <h1>Bike Repair Shop</h1>
+    <section id="header">
+        <img src="done.jpeg" alt="">
+        <div class="navbar">
+            <h1>Bike Repair Shop</h1>
             <ul>
                 <li><a href="bike.html">Services</a></li>
                 <li><a href="contact.html">Contacts</a></li>
             </ul>
+        </div>
+    </section>
+    <section id="services">
+        <h2>Our Bike Repair Services</h2>
+        <div class="service-container">
+            <div class="service" onclick="showMessage('Tire Replacement')">
+                <img src="tire replacemnt.jpeg" alt="Tire Replacement">
+                <h3>Tire Replacement</h3>
+                <p>Get your worn-out tires replaced with high-quality ones to ensure a smooth and safe ride.</p>
             </div>
-        </section>
-        <section id="services">
-            <h2>Our Bike Repair Services</h2>
-            <div class="service-container">
-                <div class="service">
-                    <img src="tire replacemnt.jpeg" alt="Tire Replacement">
-                    <h3>Tire Replacement</h3>
-                    <p>Get your worn-out tires replaced with high-quality ones to ensure a smooth and safe ride.</p>
-                </div>
-                <div class="service">
-                    <img src="chain lubricant.jpeg" alt="Chain Lubrication">
-                    <h3>Chain Lubrication</h3>
-                    <p>Keep your bike's chain well-lubricated for optimal performance and longevity.</p>
-                </div>
-                <div class="service">
-                    <img src="brake adjusment.jpeg" alt="Brake Adjustment">
-                    <h3>Brake Adjustment</h3>
-                    <p>Ensure your brakes are in top condition with our expert brake adjustment services.</p>
-                </div>
-                <div class="service">
-                    <img src="gare tuning.jpeg" alt="Gear Tuning">
-                    <h3>Gear Tuning</h3>
-                    <p>Experience smooth gear shifting with our professional gear tuning services.</p>
-                </div>
-                <div class="service">
-                    <img src="full tune up.jpeg" alt="Full Tune-Up">
-                    <h3>Full Tune-Up</h3>
-                    <p>Give your bike the complete care it deserves with our comprehensive tune-up package.</p>
-                </div>
+            <div class="service" onclick="showMessage('Chain Lubrication')">
+                <img src="chain lubricant.jpeg" alt="Chain Lubrication">
+                <h3>Chain Lubrication</h3>
+                <p>Keep your bike's chain well-lubricated for optimal performance and longevity.</p>
             </div>
-        </section>
+            <div class="service" onclick="showMessage('Brake Adjustment')">
+                <img src="brake adjusment.jpeg" alt="Brake Adjustment">
+                <h3>Brake Adjustment</h3>
+                <p>Ensure your brakes are in top condition with our expert brake adjustment services.</p>
+            </div>
+            <div class="service" onclick="showMessage('Gear Tuning')">
+                <img src="gare tuning.jpeg" alt="Gear Tuning">
+                <h3>Gear Tuning</h3>
+                <p>Experience smooth gear shifting with our professional gear tuning services.</p>
+            </div>
+            <div class="service" onclick="showMessage('Full Tune-Up')">
+                <img src="full tune up.jpeg" alt="Full Tune-Up">
+                <h3>Full Tune-Up</h3>
+                <p>Give your bike the complete care it deserves with our comprehensive tune-up package.</p>
+            </div>
+        </div>
+    </section>
+    <script src="bike.js">
+        
+    </script>
+</body>
+</html>
+
         
     <footer>
         <p>&copy; 2024 Bike Repair Shop</p>
