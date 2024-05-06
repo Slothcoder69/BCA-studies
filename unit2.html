@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacks and Queues</title>
+    <style>
+        body {
+            font-family: 'Roboto Mono', monospace;
+            margin: 0;
+            padding: 20px;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #ff6347;
+        }
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 24px;
+            margin-top: 30px;
+        }
+        p, li {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+        span {
+            color: #6495ed;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        a {
+            color: #4169e1;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Stacks and Queues</h1>
+    <p><span>Stack:</span> A stack is a linear data structure that follows a particular order in which operations are performed. The order may be LIFO (Last in, First out) or FILO (First in, Last out). It allows adding and removing elements in a particular order. Examples include a deck of cards, a pile of plates, etc.</p>
+    <p>It has two main operations:</p>
+    <ul>
+        <li>Push: Adds an element to the collection.</li>
+        <li>Pop: Removes the most recently added element.</li>
+    </ul>
+    <p>For a detailed explanation and program, refer to <a href="stack.cpp">this link</a>.</p>
+    
+    <h2>What is a stack in detail:</h2>
+    <p>A stack is a linear data structure that holds a linear, ordered sequence of elements. It is an abstract data type. A stack works on the LIFO process (Last In First Out), i.e., the element that was inserted last will be removed first.</p>
+    <img src="stack push pop img1.png" alt="Stack Push Pop Image" height="150">
+
+    <h2>Operations on Stacks:</h2>
+    <p>An operation on a stack typically refers to one of the fundamental actions you can perform on a data structure known as a stack. A stack is a collection of elements that follows the Last In, First Out (LIFO) principle, meaning that the most recently added element is the first one to be removed.</p>
+    <ul>
+        <li>Push: Adds an element to the top of the stack.</li>
+        <li>Pop: Removes the top element from the stack.</li>
+        <li>Peek (or Top): Returns the top element of the stack without removing it.</li>
+        <li>isEmpty: Checks if the stack is empty.</li>
+        <li>isFull: Checks if the stack is full (relevant for implementations with a fixed size).</li>
+    </ul>
+    <p>For a program on stack operations, refer to <a href="operationstack.cpp">this link</a>.</p>
+    
+    <h2>Stack Implementation:</h2>
+    <p>A stack can be implemented using both static data structures (array) and dynamic data structures (linked list).</p>
+    <p><span>Array Implementation:</span> In this implementation, a fixed-size array is used to store the elements of the stack. The top of the stack is represented by an index variable.</p>
+    <ul>
+        <li>Advantages: Simple implementation, constant time access to elements.</li>
+        <li>Disadvantages: Limited size, resizing the array can be expensive.</li>
+    </ul>
+    <p><span>Linked List Implementation:</span> In this implementation, a linked list is used where each node contains a data element and a pointer to the next node.</p>
+    <ul>
+        <li>Advantages: Dynamic size, efficient memory usage.</li>
+        <li>Disadvantages: Slightly more complex implementation, memory overhead for storing pointers.</li>
+    </ul>
+</body>
+</html>
