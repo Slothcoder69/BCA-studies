@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="basic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <section id="header">
+        <h1 onclick="reload()">BCA SEM 2</h1>
+        <div>
+            <ul id="navbar" class="navbar">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="shop.html">Imp question</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" id="close"><i class="far fa-times"></i></a></li>
+            </ul>
+            <div id="mobile">
+                <i id="bar" class="fa-solid fa-bars" onclick="toggleNav()"></i>
+            </div>
+        </div>
+    </section>
+    <h2>Queue</h2>
+    <p><span>Queue:</span>Is a non-primitive linear data structure that permits insertion of an element at one end and deletion of an element at other end. <br>
+        The end at which the deletion of an
+        element take place is called <span>front</span>, <br> and the end at which insertion of a new element can
+        take place is called <span>rear</span></p>
+        <p>The first element that gets added into the queue is the first one to get removed from the list. <br> Hence, Queue is also referred to as <span>First-In-First-Out (FIFO)</span></p>
+        <p><span>Real life example</span>The name
+            ‘Queue’ comes from the everyday use of the term. Consider a railway reservation booth,
+            at which we have to get into the reservation queue. <br> New customers got into the queue
+            from the rear end, whereas the customers who get their seats reserved leave the queue
+            from the front end.</p>
+            <p><span>Another example:-</span>In a resturant first come first served</p>
+            <img src="Queue.png" alt="" height="120px" width="300px">
+            <br>
+            <p>The process to add element into queue is called Enqueue and the process of removing a element in a queue called Dequeue</p>
+            <h2>Operations in queue</h2>
+            <li>Enqueue:This operation adds an element to back of the queue</li>
+            <li>Dequeue: This operation removes an element from the front of the queue</li>
+            <li>Peek: This operation returns the value of the element at front of the queue without removing it</li>
+            <li>Isempty: This operation checks of the queue is empty</li>
+            <li>Isfull: this operation checks of the queue is full</li>
+            <h2>Types of Queue</h2>
+            <ol>There are four types of queue
+                <li>Simple Queue</li>
+                <li>Circular Queue</li>
+                <li>Dequeue (Double ended Queue)</li>
+                <li>Priority Queue</li>
+            </ol>
+            <p>Simple queue is covered read just the the previous paragraphs</p>
+        <h4>Circular Queue:</h4>
+        <script>
+            function reload() {
+                // Define reload functionality here
+            }
+    
+            function toggleNav() {
+                var nav = document.getElementById("navbar");
+                if (nav.classList.contains("show")) {
+                    nav.classList.remove("show");
+                } else {
+                    nav.classList.add("show");
+                }
+            }
+        </script>
+</body>
+</html>
