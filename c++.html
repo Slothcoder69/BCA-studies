@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C++</title>
+    
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <section id="header">
+        <h1 onclick="reload()">BCA SEM 2</h1>
+        <div>
+            <ul id="navbar" class="navbar">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="shop.html">Imp question</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" id="close"><i class="far fa-times"></i></a></li>
+            </ul>
+            <div id="mobile">
+                <i id="bar" class="fa-solid fa-bars" onclick="toggleNav()"></i>
+            </div>
+        </div>
+    </section>
+    <section id="subjects">
+        <div class="box">
+            <ul class="subjects">
+                <li><a href="chap1.html" ><button>Unit 1 </button></a></li>
+                <li><a href="Samirunit1c++.html"><button>Chapter 1</button></a></li>
+                <li><a href=""><button>Unit 2</button></a></li>
+                <li><a href=""><button>Unit 3</button></a></li>
+                <li><a href=""><button>Unit 4</button></a></li>
+                <li><a href=""><button>Unit 5 </button></a></li>
+            </ul>
+        </div>
+    </section>
+
+    <script>
+        function reload() {
+            // Define reload functionality here
+        }
+
+        function toggleNav() {
+            var nav = document.getElementById("navbar");
+            if (nav.classList.contains("show")) {
+                nav.classList.remove("show");
+            } else {
+                nav.classList.add("show");
+            }
+        }
+    </script>
+</body>
+</html>

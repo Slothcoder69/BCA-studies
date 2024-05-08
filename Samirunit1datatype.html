@@ -1,0 +1,248 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="samir.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+    <center><h1 style="background-color: cadetblue;">DATA TYPES</h1></center>
+    </nav>
+<br>
+    <article>
+        1. While doing programming in any language, we have to use various variables to store various information.
+        <br>
+        2. Variables are reserved memory location to store values.
+        This mean that when we create a variable, some space is reserved in the memory.
+        <br>
+        3. Dta type is a type of data like character, wide character, integer, floating point,
+        double, boolean etc.
+        <br>
+        4. Based on the data type of a variable, the operating system allocates memory and decides
+        what value can be store in the reserved memory.
+        <br>
+        5. Thre can be various types od=f data that can be used in our daily life to solve any type of problem.
+        
+    </article>
+    <br>
+   
+<hr>
+<br>
+    <center><h3 style="background-color: rgb(32, 178, 127);">Data Types of C++ can be classified into the following categories :</h3></center>
+    <br>
+    <h2>1. Primary or Basic data types</h2>
+    <h2>2. Secondary or Derived data types</h2>
+    <h2>3. User-defined data types</h2>
+    <br>
+    <center><h3>1. Basic Data Types</h3></center>
+    <br>
+   <center>
+    <p>Integer</p>
+    <br>
+    <p>Float</p>
+    <br>
+    <p>Void</p>
+   </center>
+   <br>
+   <hr>
+   <br>
+   <center>
+    <h4>Integer</h4>
+    <br>
+    <p>1. int <br> 2. Char <br> 3. Bool</p>
+    <br>
+    <hr>
+    <br>
+    <h4>Float</h4>
+    <br>
+    <p>1.Float <br> 2. Double</p>
+    <br>
+    <hr>
+    <br>
+    <h4>Void</h4>
+    <br>
+    <hr>
+    <br>
+    <center><h3>2. Derived Data Types</h3></center>
+    <br>
+    <p>1. Array <br> 2. Pointers <br> 3. Functions <br> 4. Reference</p>
+<br>
+<hr>
+<br>
+    <center><h3>3. User-defined Data Types</h3></center>
+    <br>
+    <p>1. Structures <br> 2. Union <br> 3. Class <br> 4. Enumeration <br> 5. Typedef</p>
+
+   </center>
+<br>
+<hr>
+<br>
+   <center><h2>Primary or Basic data types</h2></center>
+   <br>
+   <article>
+    1. Primary data types are the basic building blocks of the data structure.
+    <br>
+    2. int, char, float, double, bool and void are basic data types available in C++.
+    <br>
+    3. Several of the basic types can be modified using one or more of the following type modifiers :
+   </article>
+   <br>
+   <center><p>signed <br> unsigned <br> short <br> long</p></center>
+   <br>
+   <hr><br>
+<center><h2>int data type</h2></center>
+<br>
+  <center> <table>
+    <th>Data type</th>
+    <th>Bytes</th>
+    <th>Range</th>
+
+    <tr>
+        <td>short <br> or int <br> or signed int<br> or signed short int</td>
+        <td><center>2</center></td>
+        <td><center>-32768 to +32767</center></td>
+    </tr>
+
+    <tr>
+        <td>unsigned int</td>
+        <td><center>2</center></td>
+        <td><center>65535</center></td>
+    </tr>
+
+    <tr>
+        <td>long int <br> or signed long int <br>or long</td>
+        <td><center>4</center></td>
+        <td>-21474893648 to +2147483647</td>
+    </tr>
+
+    <tr>
+        <td>unsigned long int <br> or unsigned long</td>
+        <td><center>4</center></td>
+        <td><center>0 to 4294967295</center></td>
+    </tr>
+   </table> </center>
+   <br>
+<hr>
+<br>
+   
+<center><h3>Example : <br> Write a program to print the size of various int data types on your computer</h3></center>
+<br>
+<h4>Solution :</h4>
+
+<div>
+<pre class="language-cpp" tabindex="0"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+    <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+ 
+    <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+        std<span class="token double-colon punctuation">::</span>cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Size of int"</span><span class="token operator">&lt;&lt;</span>sizeof (int) <span class="token punctuation">&lt;&lt; endl;</span>
+        std<span class="token double-colon punctuation">::</span>cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Size long int"</span><span class="token operator">&lt;&lt;</span>sizeof (long) <span class="token punctuation">&lt;&lt; endl;</span>
+        std<span class="token double-colon punctuation">::</span>cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Size of long int"</span><span class="token operator">&lt;&lt;</span>sizeof (short) <span class="token punctuation">&lt;&lt; endl;</span>
+        std<span class="token double-colon punctuation">::</span>cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Size of unsigned int"</span><span class="token operator">&lt;&lt;</span>sizeof (unsigned) <span class="token punctuation">&lt;&lt; endl;</span>
+        std<span class="token double-colon punctuation">::</span>cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Size of signed int"</span><span class="token operator">&lt;&lt;</span>sizeof (signed) <span class="token punctuation">&lt;&lt; endl;</span>
+
+        <!-- <span class="token keyword">return</span> <span class="token number">0</span><span class="token punctuation">;</span> -->
+    <span class="token punctuation">}</span>
+    </code></pre> </div>
+
+    <article>In this code we are using () function to get the size of various data types.
+        <br>
+        When this code is compiled and executed, it produces the following results.
+    </article>
+<h4>Output :</h4>
+<br>
+<p>
+    Size of int : 2 
+    <br>
+    Size of long int : 4
+    <br>
+    Size of short int : 2
+    <br>
+    Size of unsigned int : 2
+    <br>
+    Size of signed int : 2
+
+</p>
+
+<br>
+<hr>
+<br>
+
+<center><h3>Float data type</h3></center>
+<br>
+<center>
+<table>
+    <tr>
+        <th>Data type</th>
+        <th>Byte</th>
+        <th>Range</th>
+        <th>Digits of Precision</th>
+    </tr>
+        <td><center>float</center></td>
+        <td><center>4</center></td>
+        <td>-3.4e38 to +3.4e38</td>
+        <td><center>6</center></td>
+    <tr>
+
+        <tr>
+            <td><center>double</center></td>
+            <td><center>8</center></td>
+            <td>-1.7e308 to +1.7e308</td>
+            <td><center>15</center></td>
+        </tr>
+
+        <tr>
+            <td>long double</td>
+            <td><center>10</center></td>
+            <td>-1.1 e4932 to +1.1 e4932</td>
+            <td><center>18</center></td>
+        </tr>
+
+    </tr>
+</table>
+</center>
+<br>
+<hr>
+<br>
+<center><h3>Write a program to print the size of various float type on
+    your computer</h3></center>
+<br>
+    <h4>Solution :</h4>
+    <br>
+    <pre class="language-cpp" tabindex="0"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+        <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+     
+        <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token punctuation">{</span>
+        </span>cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Size of float"</span><span class="token operator">&lt;&lt;</span>sizeof (float) <span class="token punctuation">&lt;&lt;endl;</span>
+        </span>cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Size of double"</span><span class="token operator">&lt;&lt;</span>sizeof (double) <span class="token punctuation">&lt;&lt;endl;</span>
+        </span>cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Size of long double"</span><span class="token operator">&lt;&lt;</span>sizeof (long double);</span>
+         
+        <span class="token punctuation">}</span>
+        </code> </pre>
+
+        <h4>Output :</h4>
+
+        <br>
+<p>
+    Size of float : 4 
+    <br>
+    Size of double : 8
+    <br>
+    Size of long double : 10
+  
+
+</p>
+
+<br>
+<hr>
+<br>
+
+
+     
+
+</body>
+</html>
