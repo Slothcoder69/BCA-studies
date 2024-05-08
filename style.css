@@ -1,56 +1,170 @@
-style.css
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
 }
 
-body{
-    background: rgba(0, 0, 0, 0.6) url('bike.jpg') center center fixed;
-    background-size: cover;
-    background-blend-mode: darken;
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
 }
 
-.container{
-    margin: auto;
-    padding: 20px;
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+h6 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+p {
+    font-size: 16px;
+    color: #465b52;
+}
+
+body {
+    width: 100%;
+}
+
+#header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 20px 80px;
+    background-color: #e3e6f3;
+    box-shadow: 0 5px 15px rgb(0,0,0,0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
-.container h1{
-    color: #fff;
-    font-weight: 700;
-    font-size: 40px;
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#navbar.active {
+    right: 0px;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover {
+    color: #088178;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: black;
+    pointer-events: all;
     cursor: pointer;
 }
 
-.navbar ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 0 20px;
-}
-
-.navbar ul li a{
-    padding: 9px;
-    text-decoration: none;
-    color: #fff;
-    font-size: 20px;
-    transition: 1s;
-}
-
-.navbar ul li a:hover{
-    background-color: rgb(252, 20, 140);
-}
-
-.content{
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    background:black;
     position: absolute;
-    color: #fff;
-    margin-top: 11%;
-    margin-left: 15%;
+    bottom: -4px;
+    left: 20px;
 }
 
-.content h1{
-    font-size: 50px;
+#moblie {
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
+}
+
+#mobile {
+    display: none; /* Initially hide on all screens */
+}
+#subjects {
+    display: inline-block; /* Use flexbox to create space between buttons */
+    justify-content: space-between; /* Ensure space between buttons */
+}
+
+.subjects {
+    display: block; /* Use flexbox for the buttons */
+    flex-direction: column; /* Align buttons vertically */
+    align-items: center; /* Center buttons horizontally */
+    padding: 150px;
+}
+
+.subjects li {
+    margin-bottom: 20px; /* Add margin between buttons */
+    list-style: none;
+}
+
+.subjects button {
+    display: block;
+    width: 100px; /* Set same width for all buttons */
+    height: 100px; /* Set same height for all buttons */
+    background-color: crimson;
+    border: none;
+    border-radius: 50%; /* Make the buttons circular */
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none; /* Remove default outline */
+}
+
+.subjects button:hover {
+    background-color: darkred; /* Change background color on hover */
+}
+
+
+@media only screen and (max-width: 768px) {
+    #navbar {
+        display: none; /* Initially hide on smaller screens */
+    }
+    #mobile {
+        display: block; /* Show bar icon on smaller screens */
+    }
+    #header {
+        justify-content: flex-start; /* Align items to the start on smaller screens */
+    }
+    #navbar.show {
+        display: flex; /* Show when toggled on smaller screens */
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background-color: #e3e6f3;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+        z-index: 999;
+    }
+    #navbar li {
+        padding: 10px;
+    }
 }
