@@ -51,7 +51,23 @@
                 <li>Priority Queue</li>
             </ol>
             <p>Simple queue is covered read just the the previous paragraphs</p>
-        <h4>Circular Queue:</h4>
+    <p> <span style="color: blue;">Circular Queue:</span> The simple queue has a drawback where, if the array is not full, it is still considered <br> full due to the rear pointer reaching the end <br> <li>This issue can be addressed by using a circular queue, where the rear pointer can wrap around to the beginning of the array <br> when it reaches the end, effectively utilizing all available space.</li></p>
+            <ol style="font-size: 18px ">Advantages of Circular Queue:
+                <li>It provides a quick way to store FIFO data with a maximum size.</li>
+                <li>Efficient utilization of the memory.</li>
+                <li>Doesn't use dynamic memory.</li>
+                <li>Simple implementation.</li>
+                <li>All operations occur in O(1) constant time.</li>
+            </ol>
+            <p><span style="color: blue;">Dequeue:-</span>The word dequeue is a short form of double-ended queue. It is pronounced as deck. <br> Dequeue defines a data structure where elements can be added or deleted at either the fron end or rear end, but no changes can be made elsewhere in the list. <br>The dequeue is a generalisation of both a stack and a queue</p><img src="dequeue.png" alt="">
+            <ol>The four operation associated with dequeue
+                <li><span>Enqueue Front:</span> adds element at the front end of the queue</li>
+                <li><span>Enqueue Rear:</span> adds element at the rear end of the queue</li>
+               <li><span>Dequeue Front:</span> deletes element at the front end of the queue.</li>
+                <li><span>Dequeue Rear:</span>deletes element at the rear end of the queue</li>
+            </ol>
+            <p><span style="color: blue;">Priority  Queue: </span>A priority queue is a type of queue that arranges elements based on their priority values. <br>Elements with higher priority values are typically retrieved before elements with lower priority values. <br>In a priority queue, each element has a priority value associated with it.</p> <br><br> <img src="priorty queue.png" alt="">
+       
         <script>
             function reload() {
                 // Define reload functionality here
