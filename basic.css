@@ -1,0 +1,141 @@
+* {
+    
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+h1, h2, h3 {
+    color: #ff6347;
+}
+h1 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+h2 {
+    font-size: 24px;
+    margin-top: 30px;
+}
+p, li {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+span {
+    color: #6495ed;
+}
+ul {
+    padding-left: 20px;
+}
+a {
+    color: #4169e1;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+img {
+    display: block;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-color: aqua;
+    box-shadow: 0 5px 15px rgb(0,0,0,0.06);
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+#navbar.active {
+    right: 0px;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover {
+    color: #088178;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: black;
+    pointer-events: all;
+    cursor: pointer;
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 30%;
+    background:black;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#moblie {
+    display: none;
+    align-items: center;
+}
+
+#close {
+    display: none;
+}
+
+#mobile {
+    display: none; /* Initially hide on all screens */
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    #navbar {
+        display: none; /* Initially hide on smaller screens */
+    }
+    #mobile {
+        display: block; /* Show bar icon on smaller screens */
+    }
+    #header {
+        justify-content: flex-start; /* Align items to the start on smaller screens */
+    }
+    #navbar.show {
+        display: flex; /* Show when toggled on smaller screens */
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background-color: #e3e6f3;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+        z-index: 999;
+    }
+    #navbar li {
+        padding: 10px;
+    }
+}

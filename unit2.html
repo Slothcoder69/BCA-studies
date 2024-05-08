@@ -4,53 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stacks and Queues</title>
-    <style>
-        body {
-            font-family: 'Roboto Mono', monospace;
-            margin: 0;
-            padding: 20px;
-            background-color: #f8f8f8;
-            color: #333;
-        }
-        h1, h2, h3 {
-            color: #ff6347;
-        }
-        h1 {
-            text-align: center;
-            font-size: 36px;
-            margin-bottom: 20px;
-        }
-        h2 {
-            font-size: 24px;
-            margin-top: 30px;
-        }
-        p, li {
-            font-size: 18px;
-            line-height: 1.6;
-            margin-bottom: 10px;
-        }
-        span {
-            color: #6495ed;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        a {
-            color: #4169e1;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        img {
-            display: block;
-            margin: 20px auto;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="basic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
+    <section id="header">
+        <h1 onclick="reload()">BCA SEM 2</h1>
+        <div>
+            <ul id="navbar" class="navbar">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="shop.html">Imp question</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" id="close"><i class="far fa-times"></i></a></li>
+            </ul>
+            <div id="mobile">
+                <i id="bar" class="fa-solid fa-bars" onclick="toggleNav()"></i>
+            </div>
+        </div>
+    </section>
     <h1>Stacks and Queues</h1>
     <p><span>Stack:</span> A stack is a linear data structure that follows a particular order in which operations are performed. The order may be LIFO (Last in, First out) or FILO (First in, Last out). It allows adding and removing elements in a particular order. Examples include a deck of cards, a pile of plates, etc.</p>
     <p>It has two main operations:</p>
@@ -87,5 +59,47 @@
         <li>Advantages: Dynamic size, efficient memory usage.</li>
         <li>Disadvantages: Slightly more complex implementation, memory overhead for storing pointers.</li>
     </ul>
+    <h3>Applications of a stack</h3>
+    <p><li><span>Function Call Management:</span>Stacks are widely used in programming languages to manage function calls. When a function is called, its parameters and local variables are pushed onto the stack, and when the function returns, they are popped off the stack.</li>
+    <li><span>Memory Management:</span> Stacks are essential in managing memory in computer systems. The call stack, for instance, is used to keep track of the execution of programs, including function calls and returns.</li></p>
+    <p>Representing expressions using stacks is a common technique, especially in converting between different notations (e.g., infix to postfix). <br> Here's how expressions can be represented using stacks: <br>
+
+        Infix Expression: <br>
+        In infix notation, operators are placed between operands. <br> For example, 2 + 3 * 4. <br>
+        Postfix (Reverse Polish Notation) Expression: <br>
+        In postfix notation, operators come after their operands. <br> For example, the postfix equivalent of 2 + 3 * 4 is 2 3 4 * +. <br>
+        Prefix (Polish Notation) Expression: <br>
+        In prefix notation, operators precede their operands.  <br>For example, the prefix equivalent of 2 + 3 * 4 is + 2 * 3 4.</p>
+    <p>IMP QUESTIONS FROM UNIT 2 <br>
+        <h2>Stack is completed now Click this link for part 2</h2><a href="queue.html">Queue click me</a></h2> <br><br><br>
+        LAQ 1.Representation of Stacks?(Explain in detail with diagram and program and example)<br>
+        2.Operations on stacks?(Explain in detail with diagram and program and example)<br>
+        3.Representation of Queue?(Explain in detail with diagram and program and example)<br>
+        4.Operations on Queue?(Explain in detail with diagram and program and example) <br>
+        5.Types of Queue?(Explain in detail with diagram and program and example)
+        <br>
+        SAQ <br>
+        1.Stacks?(define,syntax and example)<br>
+        2.Queues?(define,syntax and example)<br>
+        3.Representation of stacks?(define,syntax and example)<br>
+        4.Operation on stacks?(define,syntax and example)<br>
+        5.Representation of Queue?(define,syntax and example) <br>
+        6.operationson on queues?(define,syntax and example) <br>
+        6.Types of queue?(define,syntax and example) <br>
+    </p>
+    <script>
+        function reload() {
+            // Define reload functionality here
+        }
+
+        function toggleNav() {
+            var nav = document.getElementById("navbar");
+            if (nav.classList.contains("show")) {
+                nav.classList.remove("show");
+            } else {
+                nav.classList.add("show");
+            }
+        }
+    </script>
 </body>
 </html>
