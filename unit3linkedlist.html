@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linked List</title>
+    <link rel="stylesheet" href="basic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body style="background-color: wheat;">
+    <section id="header">
+        <h1 onclick="reload()">BCA SEM 2</h1>
+        <div>
+            <ul id="navbar" class="navbar">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="shop.html">Imp question</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" id="close"><i class="far fa-times"></i></a></li>
+            </ul>
+            <div id="mobile">
+                <i id="bar" class="fa-solid fa-bars" onclick="toggleNav()"></i>
+            </div>
+        </div>
+    </section>
+    <h1 style="background-color: red; width: 100%; ;">Linked List</h1>
+    <p>Linked lists and arrays are similar since they both store collections of data. <br> Array is the most common data structure used to store collections of elements.</p>
+    <p>Linked lists have their own strengths and weaknesses,  but they <br> happen to be strong where arrays are weak.</p>
+    <ul style="font-size: 18px; color: blue;">The disadvantages of arrays are:
+    <li>The size of the array is fixed. Most often this size is specified at compile time. <br>This makes the programmers to allocate arrays, which seems "large enough" <br>than required.</li>
+    <li>Inserting new elements at the front is potentially expensive because <br> existing
+    elements need to be shifted over to make room.</li>
+    <li>Deleting an element from an array is not possible.</li>
+</ul>
+<p style="font-size: 16px;"><span style="color: red;">A linked list can be define as :</span>
+    A linked list is a linear data structure consisting of a sequence of elements called nodes. <br> Each node contains two parts: data and a reference (or pointer) to the next node in the sequence. <br>Unlike arrays, which store elements in contiguous memory locations, linked lists use pointers to link nodes together, <br> allowing for efficient insertion and deletion operations at any position within the list.</p>
+    <p></p>
+    <img src="Singlelinkedlist.png" alt="" height="100px">
+    <section id="singly linked list">
+       <ol style="font-size: 18px; background-color: yellow; color: red;" > There are several types of linked lists, including:
+
+<li>Singly linked list: Each node contains data and a reference to the next node in the sequence</li>
+<li>Doubly linked list: Each node contains data and references to both the next and previous nodes in the sequence, enabling traversal in both directions.</li>
+<li>Circular linked list: In this type of linked list, the last node points back to the first node, forming a circular structure.</li> </ol>
+    </section>
+    <section class="Terminology of Linked Lists">
+        <h2 style="background-color: black;text-align: center;">"Terminology of Linked Lists"
+        </h2>
+        <p><span style="font-style: oblique;">Header Node:</span>A header node is a special node that is attached at the beginnning <br> of the linked list. This header node may contain special information(metadata) <br> about the linked list  </p><hr>
+        <p><span style="font-style: oblique;">Data Node</span>This lists contain data that store the data members and link(s) to its predecessor(and/or successor)</p><hr>
+        <p><span style="font-style: oblique;">Head pointer</span>
+            "Head pointer" refers to a pointer variable that holds the memory <br> address of the first node in a linked list. It's essentially a reference to the <br>starting point of the list. The head pointer allows access to the entire linked list <br>by following the chain of nodes via their "next" pointers. Manipulating the <br>head pointer enables operations such as insertion, deletion, traversal, <br>and searching within the linked list.</p><hr>
+        <p><span style="font-style: oblique;">Tail Pointer</span>Similar to head pointer that points to the first node of a linked list,<br> we may have a pointer pointing to the last node of a linked list called the tail pointer</p><hr>
+    </section>
+    <section style="background-color: whitesmoke; ">
+        <h4 style="font-size: 20px; background-color: greenyellow; color: blue;">IMPORTANT QUESTIONS</h4>
+        <ol style="font-size: 19px; color: black;" >SAQ
+        <li>Linked list(Define & diagram)</li>
+        <li>Singly Linked list (Define & diagram)</li>
+        <li>Doubly linked list (Define & diagram)</li>
+        <li>Circular List(Define & diagram)</li>
+        <li>Hashing(Define & diagram)</li>
+        <li>static Hashing (Define & diagram)</li>
+        <li>Hash tables (Define & diagram)</li>
+        <li>Hash functions(Define & diagram)</li>
+        <li>Overflow handling(Define & diagram)</li>
+    </ol>
+    <ol style="font-size: 19px; color: black;">LAQ's
+    <li>Linked list(Explain in detail with daigram & an example program & output)</li>
+    <li>Singly linked list(Explain in detail with daigram & an example program & output)</li>
+    <li>Doubly linked list (Explain in detail with daigram & an example program & output)</li>V.imp
+    <li>Circular list(Explain in detail with daigram & an example program & output)</li>v.imp
+    <li>Hashing(Explain in detail with daigram & an example program & output)</li>
+    <li>Static hasing(Explain in detail with daigram & an example program & output)</li>
+    <li>Hash tables (Explain in detail with daigram & an example program & output)</li>
+    <li>Hash functions(Explain in detail with daigram & an example program & output)</li>
+    <li>Overflow Handling (Explain in detail with daigram & an example program & output)</li>
+    </ol>
+</section>
+    <script>
+        function reload() {
+            // Define reload functionality here
+        }
+
+        function toggleNav() {
+            var nav = document.getElementById("navbar");
+            if (nav.classList.contains("show")) {
+                nav.classList.remove("show");
+            } else {
+                nav.classList.add("show");
+            }
+        }
+    </script>
+</body>
+</html>
