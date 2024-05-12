@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="samir.css">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
@@ -241,8 +241,265 @@
 <hr>
 <br>
 
+<center><h3>Char data type</h3></center>
+<br>
+<article>
+   1. The character variable are used to store ASCII (American Standerd Code for Information Interface ) character.
+   2. It occupies one byte of memory.
+   3. The Integer value of ASCII character range from - 128 to + 127.
+   4. ASCII values of uppercase letters, lowercase letters and digits is 
+   A to Z - 65 to 90
+   a to z - 97 to 122
+   0 to 9 - 48 - 57
 
+</article>
+<br>
+<h4>The following shows the different character data type, their memory requirements and range of values :</h4>
+<br>
+
+<center>
+<table>
+    <th>Data type</th>
+    <th>Bytes</th>
+    <th>Range</th>
+
+    <tr>
+        <td><center>signed char
+            or char
+        </center></td>
+        <td><center>1</center></td>
+        <td>-128 to +127</td>
+    </tr>
+
+    <tr>
+        <td>unsigned char</td>
+        <td><center>1</center></td>
+        <td>0 to 255</td>
+    </tr>
+</table>
+</center>
+     <br>
+
+<center><h3>Write a program to print the size of various character data type on your computer.</h3></center>
+<br>
+
+<h4>Solution</h4>
+<br>
+
+<pre class="language-cpp" tabindex="0"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+    <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+ 
+    <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+    </span>cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Size of char"</span><span class="token operator">&lt;&lt;</span>sizeof (char) <span class="token punctuation">&lt;&lt;endl;</span>
+    </span>cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Size of unsigned char"</span><span class="token operator">&lt;&lt;</span>sizeof (unsigned char) <span class="token punctuation">&lt;&lt;endl;</span>
+  
      
+    <span class="token punctuation">}</span>
+    </code> </pre>
+<br>
+    <h4>Output</h4>
+<br>
+    <p>
+        size of char : 1
+        <br>
+        size of unsigned char : 1
+    </p>
+<br>
+   <center><h3>bool Data type</h3></center>
+   <br>
+<article>
+    1. bool is an integer data type whose variable can have only two values. i.e. true and false.
+    <br>
+    2. These values are internally stored as 0 value for false and non-zero value for true.
+    <br>
+    3. True and false are the keyword in C++.
+</article>
+<br>
+ <center><h3>Array</h3></center>
+ <br>
+<article>
+    1. Array is basically a collection of similar ( homogeneous ) data elements stored at contiguous memory location.
+    <br>
+    2. They have been given a common name.
+</article>
+<br>
+<h4>Example : Suppose we want to store the mark of 4 different students and calculate the average<h4>
+    <br>
+    <strong>Solve this problem by using two ways :</strong>
+    <br>
+    <ol>
+        <br>
+        <li>1. Using basic data type int </li>
+        <li>2. Using derived data type array</li>
+    </ol>
+<br>
+    <h4>Solution 1. Using int</h4>
+<br>
 
+<pre class="language-cpp" tabindex="0"><code class="language-cpp"><span class="token macro property"><span class="token directive-hash">#</span><span class="token directive keyword">include</span> <span class="token string">&lt;iostream&gt;</span></span>
+    <span class="token keyword">using</span> <span class="token keyword">namespace</span> std<span class="token punctuation">;</span>
+ 
+    <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">{</span>
+    </span>int <span class="token operator">m1, m2, m3, m4:</span>;</span>
+    int avg;
+    </span>cout <span class="token operator">&lt;&lt;</span> <span class="token string">"Enter the marks of four students:"</span><span class="token operator"></span> <span class="token punctuation">;</span>
+  
+     cin >> m1 >> m2 >> m3 >> m4;
+     avg = (m1 + m2 + m3 + m4)/4;
+    </span>cout <span class="token operator">&lt;&lt;</span> <span class="token string">"The average marks scored by student ="</span><span class="token operator">&lt;&lt;</span><span class="token punctuation">&lt;&lt;avg;</span>
+    <span class="token punctuation">}</span>
+    </code> </pre>
+<br>
+<hr>
+<br>
+<center style="background-color: rgb(33, 99, 220);"><h2>Class and Object</h2></center>
+<br>
+<article>
+    1. The idea of an object comes from day to day life.If we look around, we find that we are surrounded by several object wi different description.
+    <br>
+    2. In a school, students teacher, principle, desks fan, pen written pads etc are all the examples of objects.
+    <br>
+    3.In object oriented programming, we develop a program using the concept similer to building a computer systemfrom its components.
+</article>
+<br>
+
+<h4>Example :</h4>
+
+struct emp
+<pre class="language-cpp" tabindex="0"><code class="language-cpp">
+ 
+    <span class="token punctuation">{</span>
+
+    char Name [ 20 ];
+    int Basic_Pay ;
+    float Net_Pay ;
+
+    <span class="token punctuation">};</span>
+    </code> </pre>
+<hr>
+<br>
+     <strong>Here struct :   Key word</strong>
+     emp : New data type having three fields of different data type.
+<br>
+
+<article>
+   1. These fields are known as structure members or elements.
+    <br>
+   2. Here the emp is referred to as a structure name.
+    <br>
+   3. This can be used to create variable of Emp
+    <br>
+    struct emp S;     //C++ declaration
+    <br>
+    Here S is a variable and has three member variables as defined by the template.
+    <br>
+   4. Member variable are accessed by the dot operator
+   <br>
+   S. Name = Balsimar;
+   S. Basic_Pay = 20000;
+   S. Net_Pay = 25535.70;
+<br>
+   Structure can have array, pointers or structure as a member
+   <br>
+   The problem with standerd C is that structure do not support the built in data types.
+
+</article>
+<br>
+<strong>Example</strong>
+
+struct Standard
+<pre class="language-cpp" tabindex="0"><code class="language-cpp">
+ 
+    <span class="token punctuation">{</span>
+
+    float a ;
+    float b ;
+
+    <span class="token punctuation">};</span>
+    struct Standard c;
+    </code></pre>
+    <hr>
+    <br>
+
+
+    <center><h2 style="background-color: cornflowerblue;">Object And Classes</h2></center>
+    <br>
+    <article>
+        1. The main purpose of C++ programming is to add object orientation to the C programming language and classes are the central feature
+        of C++ that support object-oriented programming and are often called user defind types. 
+       <br>
+       2. A class is used to specify the form of an object and it combines data representation and methods for manipulating that data into one package.
+       <br>
+       The data and function within a class are called members of the class.
+    </article>
+    <br>
+    <hr>
+    <br>
+    
+    <h4>Object</h4>
+    <br>
+
+    <article>
+        <strong>1. Identity</strong> The name associated with an object helps in identifying the object i.e. what 
+        we call the object as? For example a wall clock is the name of object called clock which is hanged on the wall.
+        <br>
+        <br>
+        <strong>2. State</strong> An object can be in many state i.e. a computer can be in following state (i) on state (ii) off state (iii) Out of order state.
+        <br>
+        <br>
+        <strong>3. Behaviour</strong> What the object does ? Or what it is capable of doing ?
+        <br>
+        <br>
+        <strong>Example :</strong> a person can sit, stand, sleep, walk, and talk.
+        <br>
+        These object have been classified as belonging to a group or class. On the basis of commonality of possible states and behaviour we conclude from the above
+        discussion that the object can be described as the possible common state, identity and its behaviour.
+    </article>
+<br>
+<hr>
+<br>
+    <center><h2>Declaration And Definition Of Classes</h2></center>
+    <br>
+    <article>
+        1. Classes are the central to oops and a class can be used to create the object of its type. 
+        <br>
+        When you define a class, you define a blueprint for a data type. means, that is, what an object of the class will consist of and what operations can be performed on such an object.
+        <br>
+        2. The keyword class followed by the class name.
+        <br>
+        3. Class body enclosed with the pair of curly braces.
+        <br>
+        4. A class must be followed either by a semicolon or a list of declaration.
+
+    </article>
+
+    <br>
+    <h4>Code</h4>
+
+    <pre class="language-cpp" tabindex="0"><code class="language-cpp">
+ 
+        <span class="token punctuation">{</span>
+    
+        access specifier ;
+        variable declaration ;     //data member or class member
+        function declaration ;    //memberfunction
+    
+        <span class="token punctuation">};</span>
+       
+        </code></pre>
+
+        <center><h3>Access Specifier</h3></center>
+        <article>
+            Access apecifier defines the access rights for the statements or functions that follow it until another 
+            access specifier or till the end of the class.
+        </article>
+        <br>
+        <strong>1. Private</strong> The members declared as "private" can be accessed only with in the same class and not from out side the class.
+        <br>
+        <strong>2. Public</strong> The members declared as "public" can be accesseble with in the class as well as from outside the class.
+        
 </body>
+
 </html>
