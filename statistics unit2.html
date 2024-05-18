@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stats unit2</title>
+  <link rel="stylesheet" href="basic.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    .yotubevideos{
+      display: flex;
+      
+    }
+    .yotubevideos button{
+      width: 80px;
+      height: 120px;
+      margin-top: 20px;
+      margin-left: 20px;
+      background-color: pink;
+    }
+    .yotubevideos button:hover{
+      background-color: aqua;
+      color: rgb(255, 0, 0);;
+    }
+  </style>
+</head>
+<body style="background-color: khaki;">
+  <section id="header">
+    <h1 onclick="reload()">BCA SEM 2</h1>
+    <div>
+        <ul id="navbar" class="navbar">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="importantquestion.html">Imp question</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#" id="close"><i class="far fa-times"></i></a></li>
+        </ul>
+        <div id="mobile">
+            <i id="bar" class="fa-solid fa-bars" onclick="toggleNav()"></i>
+        </div>
+    </div>
+</section>
+<h2 style=" background-color: rgb(255, 0, 0); font-size: 31px;">Suggested Youtube Videos </h2>
+<section class="yotubevideos">
+  <div>
+    <button><a href=""> Simple Mean</a></button>
+    <button><a href="">discrete mean</a></button>
+    <button><a href="https://youtu.be/S3N5egd9lTw?feature=shared">Continuos Mean</a></button>
+    <button><a href="https://youtu.be/XFmvVuuH26E?feature=shared">Simple Median</a></button>
+    <button><a href="https://youtu.be/NCffr4oRwC0?feature=shared">discrete Median</a></button>
+    <button><a href="">Continuos Median</a></button>
+    <button><a href="">Simple Mode</a></button>
+    <button><a href="">Discrete Mode</a></button>
+    <button><a href="">Continuos Mode</a></button>
+
+  </div>
+</section><hr>
+<section class="onscreen"><h1 style="background-color: black;">Descriptive statistics</h1>
+  <p>Descriptive statistics is again divided into Measures of Central tendancy and Measures of Variability</p>
+  <h2 >Measures of Central tendancy</h2>
+  <p><span>Central tendancy: </span>It gives an idea about the concentration of the values(obeservations). A Measures of Central <br>tendancy is statistical average or single value which represents entire distribution</p>
+  <p> It includes: 
+    Mean Median Mode Geometric Mean  Harmonic Mean 
+</p>
+<p><span>Arithmetic Mean: </span>Mean =  Average of set of values:
+<ul>It has statistical series which are divided into individual series, discrete series and Continuous series
+  <li>Individual series is further divided into direct method and shortcut method</li>
+  <li>Direct method: Sum of all individual observation/ No of individual obeservations</li>
+  <li>Shortcut Method: X&#773; = A + &sum;d/N <br> here &sum;d = X-A Derivation of item of assumed mean</li>
+</ul></p>
+<h3>Rules for writting short-cut method:
+  <LI>Take any one item in the series as assumed mean A.</LI>
+  <li>Take the deviation of item from assumed mean</li>
+  <li>Obtain Sum of devation </li>
+  <li>Submit values</li>
+</h3>
+<p><span>Discrete series:</span>X&#773; = &sum;fx/N <br> Here f = frequency, <br>Short-cut method X&#773; = A + &sum;fd/N</p>
+<p><span>Continuous Series: </span>X&#773; = &sum;fm/N <br> Her m = midpoint <br> midpoint formula = m = L+U/2 <br> Shortcut-Method: X&#773; = A + &sum;fd/N</p>
+</section>
+<script>
+  function reload() {
+      // Define reload functionality here
+  }
+
+  function toggleNav() {
+      var nav = document.getElementById("navbar");
+      if (nav.classList.contains("show")) {
+          nav.classList.remove("show");
+      } else {
+          nav.classList.add("show");
+      }
+  }
+</script>
+</body>
+</html>
