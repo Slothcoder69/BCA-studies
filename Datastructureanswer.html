@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>question and answers</title>
+    <link rel="stylesheet" href="basic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <section id="header">
+        <h1 onclick="reload()">BCA SEM 2</h1>
+        <div>
+            <ul id="navbar" class="navbar">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="importantquestion.html">Imp question</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" id="close"><i class="far fa-times"></i></a></li>
+            </ul>
+            <div id="mobile">
+                <i id="bar" class="fa-solid fa-bars" onclick="toggleNav()"></i>
+            </div>
+        </div>
+    </section>
+    <h1 style="background-color: red;">Unit 3</h1>
+    <h2>SAQ</h2>
+    <p class="question">1.Linked list(Define & diagram)? <br><span>Ans:</span> A linked list is a linear data structure consisting of a sequence of elements called nodes <br>Each node contains two parts: data and a reference (or pointer) to the next node in the sequence. <br> <img src="Singlelinkedlist.png" alt="" >
+    </p>
+    <p class="question">2.Singly Linked list (Define & diagram) <br>
+        <span>Ans: </span>A singly linked list is a data structure consisting of nodes where each node contains two parts: data and a pointer to the next node in the sequence. The first node is called the head, and the last node points to null, indicating the end of the list.
+    </p>
+    <p>3.Doubly Linked list(define & diagram)? <br>
+        <span>Ans: </span>A doubly linked list is a data structure where each node contains three parts: data, a pointer to the previous node, and a pointer to the next node. This structure allows traversal in both forward and backward directions.
+    </p>
+    <p>4.Circular List(Define & diagram) <br>
+    <span>Ans:</span> A circular linked list is a type of linked list where the last node points back to the first node, forming a loop. This means that traversal can start from any node and reach all other nodes in the list.
+</p>
+<p class="fif">5.Hashing(Define & diagram)
+<br><span>Ans: </span>Hashing is one of the searching techniques that uses a constant time. The main idea behind the hashing is to create the (key/value)pairs. If the key is given, then the algorithm computes the index at which the value would be stored.
+</p>
+<p>6.Hash Tables(Define & diagram)?<br><span>Ans: </span>Static hashing is a method of organizing data for efficient retrieval, insertion, and deletion using a fixed-size hash table. Here's a concise definition and a simple diagram:
+
+</p>
+
+<script>
+    function reload() {
+        // Define reload functionality here
+    }
+
+    function toggleNav() {
+        var nav = document.getElementById("navbar");
+        if (nav.classList.contains("show")) {
+            nav.classList.remove("show");
+        } else {
+            nav.classList.add("show");
+        }
+    }
+</script>
+</body>
+</html>
