@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit5 C++</title>
+    <link rel="stylesheet" href="basic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body style="background-color: wheat;">
+    <section id="header">
+    <h1 onclick="reload()">BCA SEM 2</h1>
+    <div>
+        <ul id="navbar" class="navbar">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="shop.html">Imp question</a></li>
+            <li><a href="#">Important Questions</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#" id="close"><i class="far fa-times"></i></a></li>
+        </ul>
+        <div id="mobile">
+            <i id="bar" class="fa-solid fa-bars" onclick="toggleNav()"></i>
+        </div>
+    </div>
+</section>
+    <h1 style="background-color: yellow;margin-top: 0; text-align: center;">Polymorphism</h1>
+    <section class="polymorphism">
+        <p><span style="color: red;">Polymorphism:</span> The word polymorphism means having many forms. . It as ability of a message to be displayed in more than one form <br>
+        <dl>Example: <dd>A person at the same time can have different characterstics, so the person posses different behaviour in different situation</dd></dl></p>
+        <h3 style="color: blue;">Types of ploymorphism</h3>
+        <li style="font-size: 16px;">Compile time Polymorphism</li>
+        <li style="font-size: 16px;">Run time Polymorphism</li>
+        <br>
+    </section>
+    <div style="background-color: rgb(470, 100, 99);"><p >Compile time Polymorphism: is achived  by function overloading or operator overloading</p>
+        <p><span  style="color: rgb(64, 215, 77);">Function overloading:</span>When there are multiple function with same name and different parameters then  these functions are said to be overloaded. <br> Functions can be overloaded by change in the number of the arguments or change in the type of the arguments</p>
+    <p ><span style="color: rgb(64, 215, 77);">Operator Overloading: </span>Operator overloading allows operators to have different meanings based on the context, especially for user-defined types. It lets you define how operators like + or * work with objects of custom classes, making code more intuitive.</p></div>
+    <p ><span>Runtime Polymorphism: </span>This type of polymorphism is achieved by function overriding</p>
+    <p ><span>Function overriding: </span>Function overridding occurs when a derived class has a definition for one of member functions of the base class. The base function is said to be overridden</p><hr>
+    <h3 >Virtual Function</h3>
+    <Section><p><span>Virtual Function: </span>A virtual function is a member function of the base class, that is overridden in derived class. The class that have virtual function are called polymorphic class</p></Section> <hr>
+    <h1>TEMPLATES</h1>
+    <script>
+        function reload() {
+            // Define reload functionality here
+        }
+
+        function toggleNav() {
+            var nav = document.getElementById("navbar");
+            if (nav.classList.contains("show")) {
+                nav.classList.remove("show");
+            } else {
+                nav.classList.add("show");
+            }
+        }
+    </script>
+</body>
+</html>
