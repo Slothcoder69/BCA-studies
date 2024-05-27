@@ -32,14 +32,54 @@
         <li style="font-size: 16px;">Run time Polymorphism</li>
         <br>
     </section>
-    <div style="background-color: rgb(470, 100, 99);"><p >Compile time Polymorphism: is achived  by function overloading or operator overloading</p>
-        <p><span  style="color: rgb(64, 215, 77);">Function overloading:</span>When there are multiple function with same name and different parameters then  these functions are said to be overloaded. <br> Functions can be overloaded by change in the number of the arguments or change in the type of the arguments</p>
-    <p ><span style="color: rgb(64, 215, 77);">Operator Overloading: </span>Operator overloading allows operators to have different meanings based on the context, especially for user-defined types. It lets you define how operators like + or * work with objects of custom classes, making code more intuitive.</p></div>
-    <p ><span>Runtime Polymorphism: </span>This type of polymorphism is achieved by function overriding</p>
-    <p ><span>Function overriding: </span>Function overridding occurs when a derived class has a definition for one of member functions of the base class. The base function is said to be overridden</p><hr>
+    <div ><p >Compile time Polymorphism: is achived  by function overloading or operator overloading</p>
+        <p><span  style="color: rgb(64, 215, 77);"> <br>Function overloading:</span>When there are multiple function with same name and different parameters then  these functions are said to be overloaded. <br> Functions can be overloaded by change in the number of the arguments or change in the type of the arguments</p>
+    <p ><span style="color: rgb(64, 215, 77);"> <br>Operator Overloading: </span>Operator overloading allows operators to have different meanings based on the context, especially for user-defined types. It lets you define how operators like + or * work with objects of custom classes, making code more intuitive.</p></div>
+    <p ><span>Runtime Polymorphism: </span> <br>This type of polymorphism is achieved by function overriding</p>
+    <p ><span>Function overriding: </span> <br>Function overridding occurs when a derived class has a definition for one of member functions of the base class. The base function is said to be overridden</p><hr>
     <h3 >Virtual Function</h3>
-    <Section><p><span>Virtual Function: </span>A virtual function is a member function of the base class, that is overridden in derived class. The class that have virtual function are called polymorphic class</p></Section> <hr>
+    <Section><p><span>Virtual Function: </span> <br>A virtual function is a member function of the base class, that is overridden in derived class. The class that have virtual function are called polymorphic class</p></Section> <hr>
     <h1>TEMPLATES</h1>
+    <li>Templates help in generic programming</li>
+    <li>Implements the program to use the resue of the code efficently</li>
+    <li>It take type as a parameter</li>
+    <p>syntax: <br> template<class identifier> identifier function name() <br>{
+      <br>  \\body of function <br>} <br></p>
+      <p>Example: <br> template <class T>T addval(Ta, Tb) <br>{ <br> return (a+b) <br>} <br></p>
+        <button style="width: 50%; height: 50px;"><a href="templateprogram.cpp">Click for template program</a></button>
+        <p><span>Class Templates: </span>A class templates provides a specification for generating classes based on parameters. <br>Using the class templates, a class can have members that use template parameter as types <br>Syntax: <br>templae<class identifier>class class_name <br>{ <br> bpdy of the class <br> } <br> </p>
+            <button style="width: 50%; height: 50px;"><a href="classtemplate.cpp">Click here for class template program</a></button>
+            <hr>
+            <h1>Exception Handling</h1>
+            <p>In object oriented programmin(OOP), exceptions are powerful mechansim for centralised processing of errors and exceptional situatuins. THis mechanism replaces the procedure-oriented method of error handling in which each function returns a code indicating an error or  scuccesful execution</p>
+            <h3>C++ Exception Classes</h3><p>In c++ standard exceptions are defined in <exception> class that we can use inside our programs.All the exception in C++ are derived from std::exception class. <br> List of C++ common exception classes. 
+                <div style="font-family: Arial, sans-serif; line-height: 1.6;">
+                    <p style="margin-bottom: 0;"><strong>1. <span style="color: blue;">std::exception</span>:</strong></p>
+                    <p style="margin-top: 0; margin-left: 20px;">The base class for all standard exceptions.</p>
+            
+                    <p style="margin-bottom: 0;"><strong>2. <span style="color: blue;">std::bad_alloc</span>:</strong></p>
+                    <p style="margin-top: 0; margin-left: 20px;">Thrown by <code>new</code> when memory allocation fails.</p>
+            
+                    <p style="margin-bottom: 0;"><strong>3. <span style="color: blue;">std::bad_cast</span>:</strong></p>
+                    <p style="margin-top: 0; margin-left: 20px;">Thrown by <code>dynamic_cast</code> when it fails with a reference type.</p>
+            
+                    <p style="margin-bottom: 0;"><strong>4. <span style="color: blue;">std::bad_typeid</span>:</strong></p>
+                    <p style="margin-top: 0; margin-left: 20px;">Thrown by <code>typeid</code> when applied to a dereferenced null pointer.</p>
+            
+                    <p style="margin-bottom: 0;"><strong>5. <span style="color: blue;">std::bad_function_call</span>:</strong></p>
+                    <p style="margin-top: 0; margin-left: 20px;">Thrown by <code>std::function</code> when called on an empty function object.</p>
+                </div>
+            </p>
+            <h3>Exception handling is the indication of problem that may occur during the execution of a program <br> Exception handling is the process of handling errors</h3>
+            <h3>Errors can be divide into two types compile time error and run time error</h3>
+            <p><span>Compile time error: </span>Error caught during compile time is called compile time errors. <br>Compile time errors include library reference, syntax error or incorrect class import</p>
+            <p><span>Run time error: </span>They are also known as exceptions. An exception caught during run time create serious issues</p><hr>
+            <p style="list-style-type: decimal; padding-left: 20px;">Exception Handling 
+                <li style= "margin-bottom: 10px;" >throw </li>
+                <li style= "margin-bottom: 10px;" >catch</li>
+                <li style= "margin-bottom: 10px;" >try</li>
+            </p>
+           
     <script>
         function reload() {
             // Define reload functionality here
