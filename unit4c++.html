@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 4 Inheritance</title>
+    <link rel="stylesheet" href="basic.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body style="background-color: whitesmoke;">
+    <section id="header">
+        <h1 onclick="reload()">BCA SEM 2</h1>
+        <div>
+            <ul id="navbar" class="navbar">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="importantquestion.html">Imp question</a></li>
+                <li><a href="program.html">Programa</a></li>
+                <li><a href="Oneshot.html">Oneshot</a></li>
+                <li><a href="#" id="close"><i class="far fa-times"></i></a></li>
+            </ul>
+            <div id="mobile">
+                <i id="bar" class="fa-solid fa-bars" onclick="toggleNav()"></i>
+            </div>
+        </div>
+    </section>
+<section class="Inheritance"><h1 style="background-color: blue;">Inheritance</h1>
+<h3>Inheritance: </h3>
+<p> <span style="background-color: whitesmoke;">Inheritance: </span>The capablility of a class to derive properties and characterstics from another class is called Inheritance. Inheritance is one of the most import features of OOP's. Inheritance is the process of creating new class called derived class from the existing class called the base class</p> <hr>
+<h4>One of the main advantages of inheritance is that reusability of the code</h4> <hr>
+<h2 >Imporance of Inheritance</h2>
+<li style="list-style: none;">1.It drastically reduces the code redundancy as it allows the derived class to inherit all the properties of base class, leaving no room for duplicate data to achieve the same task</li>
+<li style="list-style: none;">2.Inheritance in c++ offers the feature of code reusability. We can use the same fragment of code multiple times. To sum it up, inheritance helps us save our development time, maintain data in simplified manner and gives the provision to make our code extensible</li>
+<li style="list-style: none;">3.It increases the code reliability by providing a definite body to the program</li>
+<li style="list-style: none;">4.The transitive nature of inheritance makes things easier for us</li> <hr>
+<h2>Types of Inheritance:</h2>
+<li style="list-style: none;">1.Single Inheritance</li>
+<li style="list-style: none;">2.Multilevel Inheritance</li>
+<li style="list-style: none;">3.Multiple Inheritance</li>
+<li style="list-style: none;">4.Hierarchial Inheritance</li>
+<li style="list-style: none;">5.Hybrid Inheritance</li>
+<hr>
+<p><span>Singel Inheritance: </span>A derive class with only 1 base class is called single inheritance</p>
+<p><span>Multilevel Inheritance: </span>A derived class with one base class and that base class is derived class of another is called Multilevel Inheritance</p>
+<p><span>Multiple Inheritance:</span> Derived class with multiple base class is called multiple inheritance</p>
+<p><span>Hierarchial Inheritance: </span>Multiple derived classes with same base class is called hierarchical inheritance</p>
+<p><span>Hybrid Inheritance: </span> Combination of multiple and hierarchical inheritance is called hybrid inheritance</p>
+</section><hr>
+<h5><strong>Operator Overloading:</strong></h5>
+<p ><span style="color: rgb(104, 15, 77);"> <br>Operator Overloading: </span>Operator overloading allows operators to have different meanings based on the context, especially for user-defined types. It lets you define how operators like + or * work with objects of custom classes, making code more intuitive.</p>
+<p>Operator Overloading is used to perform operation on user defined data type</p>
+<h3>Any operator can be overloaded in C++, however there are few operators which can note be overloaded in c++. they are:</h3>
+<li>Scope Operator</li>
+<li>sizeof</li>
+<li>member operator</li>
+<li>memeber pointer selectpr</li>
+<li>ternary operator</li>
+<h3>Operator Overloading can be done by implementing a function which can be</h3>
+<li>Member function</li>
+<li>Non-Memeber function</li>
+<li>friend function</li>
+<hr>
+<h3>Rules for Overloading operators</h3>
+<li style="list-style: none;">Only Existing Operators Can Be Overloaded: You cannot create new operators. You can only overload existing ones.</li>
+<li style="list-style: none;">Certain Operators Cannot Be Overloaded: The following operators cannot be overloaded: ::, .:, .*, ?:, sizeof, typeid, alignof.
+
+</li>
+<li style="list-style: none;">Overloaded operators must have at least one operand that is a user-defined type</li>
+<li style="list-style: none;">The overloaded operators can be member functions or global functions.</li>
+<hr>
+<h3 style="color: blue;">Restrictions on Operator Overloading</h3>
+<li style="list-style: none;">Precedence and associativity: Overloading an operator cannot change its precedence and associativity.</li>
+<li style="list-style: none;">Arity: Overloading an operator cannot change its arity, the number of operands it takes.</li>
+<li style="list-style: none;">New operators: You cannot create new operators, only overload existing ones.</li>
+<li style="list-style: none;">Built-in types: You cannot change the meaning of an operator for built-in types.</li>
+<li style="list-style: none;">Overloading for scope resolution: The scope resolution operator (::) cannot be overloaded.</li>
+<hr>
+<h4>Operator Overloading can be done by using two important apporaches, they are Overloading Unary Operator and Overloading Binary Operator
+</h4>
+<p><span>Overloading Unary Operator: </span>In unary operator function, no arguments should be passed. It works only with one class objects.It is a overloading of an Operator operating on a single operand. </p>
+<h3>Note: Unary operators include the increment (++) and decrement (--) operators.
+</h3>
+<p><span>Overloading Binary Operator: </span>In binary operator overloading function, there should be one argument to be passed.</p>
+</body>
+</html>
