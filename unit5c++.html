@@ -30,9 +30,10 @@
         <h3 style="color: blue;">Types of ploymorphism</h3>
         <li style="font-size: 16px;">Compile time Polymorphism</li>
         <li style="font-size: 16px;">Run time Polymorphism</li>
+        <button style="width: 50%; height: 50px;"><a href="polymorphsim.cpp">Click here for the program</a></button>
         <br>
     </section>
-    <div ><p >Compile time Polymorphism: is achived  by function overloading or operator overloading</p>
+    <div ><p >Compile time Polymorphism: is achieved  by function overloading or operator overloading</p>
         <p><span  style="color: rgb(64, 215, 77);"> <br>Function overloading:</span>When there are multiple function with same name and different parameters then  these functions are said to be overloaded. <br> Functions can be overloaded by change in the number of the arguments or change in the type of the arguments</p>
     <p ><span style="color: rgb(64, 215, 77);"> <br>Operator Overloading: </span>Operator overloading allows operators to have different meanings based on the context, especially for user-defined types. It lets you define how operators like + or * work with objects of custom classes, making code more intuitive.</p></div>
     <p ><span>Runtime Polymorphism: </span> <br>This type of polymorphism is achieved by function overriding</p>
@@ -47,6 +48,7 @@
       <br>  \\body of function <br>} <br></p>
       <p>Example: <br> template <class T>T addval(Ta, Tb) <br>{ <br> return (a+b) <br>} <br></p>
         <button style="width: 50%; height: 50px;"><a href="templateprogram.cpp">Click for template program</a></button>
+        <p>Template can be define as: A template is a blueprint or formula for creating generic classes or functions. It allows you to write code that works with any data type, enabling code reusability and type safety. Templates are defined using the template keyword followed by parameter(s) in angle brackets (< >).</p>
         <p><span>Class Templates: </span>A class templates provides a specification for generating classes based on parameters. <br>Using the class templates, a class can have members that use template parameter as types <br>Syntax: <br>templae<class identifier>class class_name <br>{ <br> bpdy of the class <br> } <br> </p>
             <button style="width: 50%; height: 50px;"><a href="classtemplate.cpp">Click here for class template program</a></button>
             <hr>
@@ -79,12 +81,27 @@
                 <li style= "margin-bottom: 10px;" >catch</li>
                 <li style= "margin-bottom: 10px;" >try</li>
             </p>
-           
+            <p><span>throw: </span>A program throws an exception when a problem shows up. Rhis is done using a thro keyword </p>
+            <p><span>catch: </span>A program catches the exception with an exception handler at the place in a program where u want to handle the problem. The <strong>catch</strong>keyword indicates the catching of an exception</p>
+            <p><span>try: </span>A try block identifies a block of code for which particular exceptions will be activated. It's followed by one or more catch blocks.</p>
+           <h1>Code with a <strong>try, catch </strong> code is referred to as protected code</h1>
+           <p>Syntax: <br>try{<br>//protected code <br>}catch(ExceptionName e1){<br>//catch block <br>}catch(ExceptionName e2){ <br>//catch block <br>}catch(ExceptionName eN){<br>//catch code <br>} <br></p>
+    <h3>Throwing Mechanism</h3>
+    <p>The throwing mechanism in C++ is a way to handle errors and exceptional conditions in a program. It allows the programmer to define custom exceptions and to handle them in a specific way
+        <p>To throw an exception, you use the throw keyword, followed by an expression that evaluates to the exception object. The exception object can be any type, but it is typically a class that inherits from the std::exception class.
+            <button style="height: 50px; width: 50%;"><a href="throwingmechanism.cpp">Click here for the program</a></button>
+    </p>
+    </p>
+<h3>Catching Mechanism</h3>
+<p>A method catches an exception using combination of try and catch keywords. A try/catch block is placed around the code that might generate exception.Code with a try, catch code is referred to as protected code.</p>
+<p>Synatx: <br> try{<br>//Protected code <br>}catch(ExceptionNmae e1){ <br>//catch block <br>} <br></p>
+<h1>Catching Mechansim and throwing Mechanism u can write the same program <br></h1>
+<button style="height: 50px; width: 50%;"><a href="throwingmechanism.cpp">Click here for the program</a></button>
     <script>
         function reload() {
             // Define reload functionality here
         }
-
+ 
         function toggleNav() {
             var nav = document.getElementById("navbar");
             if (nav.classList.contains("show")) {
