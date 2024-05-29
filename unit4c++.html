@@ -80,5 +80,46 @@
 <h3>Note: Unary operators include the increment (++) and decrement (--) operators.
 </h3>
 <p><span>Overloading Binary Operator: </span>In binary operator overloading function, there should be one argument to be passed.</p>
+    <h3>Pointers</h3>
+<p>a pointer is a variable that stores the memory address of another variable. <br>Pointers are symbolic representation of addresses. <br>Syntax: <br> datatype*var_name;</p>
+<p>Features of pointers</p>
+<li style="list-style: none;">1.Pointers save memory space.</li>
+<li style="list-style: none;">2.Execution time with pointers is faster because data are manipulated with the address, that is, direct access to memory location</li>
+<li style="list-style: none;">3.Pointers are used with data structures</li>
+    <li style="list-style: none;">4.Memory is accesssed efficently with pointers. The pointer assigns and releases the memory as well. Hence it can be said the Memory of pointers is dynamically allocated</li>
+    <li style="list-style: none;">5.An array, of any type can be accesed with the help of pointers.</li>
+    <li style="list-style: none;">6.pointers are used for file handling</li>
+    <h2>Arithmetic Operations On Pointers</h2>
+    <li style="list-style: none;">1.Addition</li>
+    <li style="list-style: none;">2.Subtraction</li>
+    <li style="list-style: none;">3.Increment</li>
+    <li style="list-style: none;">4.d\Decrement</li>
+    <li style="list-style: none;">5.Comparison</li><br><hr>
+    <h3 style="background-color: blue;">Array of pointers</h3>
+    <p style="color: black;"><strong>An array of pointers is an array that consists of variables of pointers type, which means that the variable is a pointer  addressing to some other element. <br>Suppose we create an array of holding 5 integer pointers; then its declaration would look like. <br>int*ptr[5]; <br> In the above declaration we declare am array of pointer named as ptr, and it allocates 5 integer pointer in memory</strong></p><hr>
+    <h3>Pointers to Objects</h3>
+    <p>
+        In programming, a pointer to an object typically refers to a variable that holds the memory address of an object rather than the object itself.</p><hr>
+    <h3 style="background-color: blue;">this pointer</h3>
+    <p>In C++ programming <span>this</span> is a keyword that refers to current instance if the class.There can be three main uses of this keyword in c++.
+    <li>it can be used to pass current object as parameter to another method</li>
+    <li>it can be used to refer class instance variable</li>
+    <li>it can be used to declare indexers</li>
+</p>
+<p>Applicatiobs if this pointers: <br> <span>Return Object: </span>One of the important applicatiobs if using pointer is to return the object it points. <br><span>Method Chaining: </span> After returning the object from function, a very useful application would be ot chain the methods for ease and a cleaner mode.</p><span>Distinguish data members: </span> Another application of this pointer is distinguishig data members from local variables of member functionif they have same name.</p>
+<script>
+    function reload() {
+        // Define reload functionality here
+    }
+
+    function toggleNav() {
+        var nav = document.getElementById("navbar");
+        if (nav.classList.contains("show")) {
+            nav.classList.remove("show");
+        } else {
+            nav.classList.add("show");
+        }
+    }
+</script>
 </body>
 </html>
