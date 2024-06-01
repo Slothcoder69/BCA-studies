@@ -1,0 +1,45 @@
+Frequency distribution: A frequency distribution is a tabulat representation of data, showing the number of times of each value
+Range = L-S
+
+
+Kurtosis is a way to describe how the tails of a data distribution look compared to a normal distribution.
+It tells us if there are more or fewer extreme values (outliers) than we'd expect in a normal distribution.
+
+
+Axiomatic approach not less than 0 not more than 1
+0 is called impossible event
+1 is  called certain event
+
+
+The discrete random variable takes a countable number of possible outcomes and it can be counted as 0, 1, 2, 3, 4, .......
+discrete random variable: binomial poisson distribution
+A continuous random variable is one which takes an infinite number of possible values.
+continuous random variable : normal distribution
+
+
+A binomial distribution is a way to describe the number of times an event happens in a fixed number of tries or experiments,
+where each try has only two possible outcomes: success or failure. It is used when you repeat the same experiment multiple times
+and each experiment is independent of the others.
+
+
+A Poisson distribution is a way to describe the number of times an event happens within a fixed period of time or in a specific area or volume, where these events happen independently of each other. It is used for events that occur randomly and infrequently.
+
+
+Regression is a statistical method used to understand and predict the relationship between two or more variables.
+If you want to predict a student's test score based on the number of hours they studied, regression can help find the relationship between study
+
+
+10Ans
+Here are two key characteristics of the t-distribution:
+
+Symmetry and Shape:
+
+The t-distribution is symmetric around zero, similar to the standard normal distribution (bell curve).
+It has heavier tails than the normal distribution, meaning it is more prone to producing values that fall far from its mean.
+Dependence on Degrees of Freedom:
+
+The shape of the t-distribution is determined by the degrees of freedom (df), which are typically related to the sample size.
+As the degrees of freedom increase, the t-distribution approaches the shape of the standard normal distribution. With a large number of degrees of freedom, the differences between the t-distribution and the normal distribution become negligible.
+
+
+You can use a Poisson distribution to predict or explain the number of events occurring within a given interval of time or space.
